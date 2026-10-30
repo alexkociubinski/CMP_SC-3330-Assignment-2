@@ -48,7 +48,7 @@ public abstract class AbstractSupportRequest implements SupportRequest {
       throw new IllegalArgumentException("Technician cannot be null.");
     }
     if (resolved) {
-      throw new IllegalStateException("Request " + id + " is already resolved.");
+      throw new IllegalStateException("Request " + id + " is already resolved."); // Each request may be resolved only once.
     }
     technician.addPoints(points);
     resolved = true;
