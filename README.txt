@@ -20,4 +20,7 @@ Alex:
 -PasswordResetRequest.java
 -HelpDeskUtil.java
 
-
+Basic Design Choices:
+1. A request cannot be resolved more than once, doing so throws an IllegalStateException.
+2. Each request can only be assigned to a single technician once. If you try to do so the program throws an IllegalStateException.
+3. Uses the  formula (basePoints + affectedUsers) to award service points when resolved.
