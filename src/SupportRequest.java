@@ -1,6 +1,6 @@
 // Make an interface for a support request
 public interface SupportRequest {
-    int getID();
+    int getId();
     String getTitle();
     int getBasePoints();
     boolean isResolved();
